@@ -10,3 +10,6 @@ Each day contains a small program that needs debugging. Each program will contai
 1. Fix the bugs in your branch
 1. Run the tests for the respective day by using `npm test day-x/*.spec.js`. Make sure all the tests are passing.
 1. (Optional) Introduce additional tests which cover even more cases!
+
+## Table of contents
+1. [Day 1 - map function over array](./day-1/map.js)
