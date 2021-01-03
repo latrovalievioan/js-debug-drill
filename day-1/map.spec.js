@@ -7,7 +7,7 @@ describe(`map over array`, () => {
   });
 
   it(`returns a shallow copy of the array when passed the id function`, () => {
-    const id = x => x;
+    const id = (x) => x;
     const input = [1, 2, `hello`, { x: 3, y: 4 }];
     expect(map(input, id)).to.deep.equal(input);
   });
@@ -17,7 +17,7 @@ describe(`map over array`, () => {
     expect(map(input, Number)).to.deep.equal(input.map(Number));
   });
 
-  it(`passed the index as second argument`, () => {
+  it.only(`passed the index as second argument`, () => {
     const input = Array.from({ length: 20 });
     expect(map(input, (_, i) => i)).to.deep.equal(input.map((_, i) => i));
   });

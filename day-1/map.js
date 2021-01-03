@@ -14,7 +14,7 @@
  **/
 const map = (array, mapFn) => {
   const result = [];
-  for (let i = array.lenght; i > 0; --i) {
+  for (let i = array.length - 1; i >= 0; --i) {
     result[i] = mapFn(array[i], i, array);
   }
 
